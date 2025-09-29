@@ -1,3 +1,9 @@
+# Separate network and resources
+# Better org resources
+# use Modules for reusability, ecs for example
+# variables should be more flexible so that it can be used in different scenarios
+# image should be more consistent, extensible, reusable
+
 terraform {
   required_providers {
     aws = {
@@ -27,7 +33,7 @@ variable "app_name" {
 variable "container_image" {
   description = "Container image URL"
   type        = string
-  default     = "ghcr.io/jamescrr/govtech-assessment:latest"
+  default     = "ghcr.io/jamescrr/govtech-assessment:latest" 
 }
 
 # VPC and Networking
